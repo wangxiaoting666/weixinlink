@@ -1,0 +1,29 @@
+<!--index.wxml-->
+
+ <navigator url="/pages/search/search" hover-class="changestyle">
+    <view class="view-search">
+    
+        <input class="input" placeholder-class="input-placeholder" placeholder="输入文章和链接" bindinput="bindSearchInput" />
+        <image class="button" src="/images/search.png" bindtap="tapSearch" />
+  
+    </view>
+   </navigator>
+
+
+
+<view class="container">
+  <view wx:for="{{cardTeams}}"  wx:key="{{cardTeam.viewid}}" wx:for-item="cardTeam" class="item" bindtap="bindViewTap">
+        <image class="img" src="{{cardTeam.imgsrc}}" mode="scaleToFill"></image>
+        <view class="number-wrapper">
+          <text class="name">{{cardTeam.name}}</text>
+          <view class="count-wrapper">
+        
+            <text class="count">{{cardTeam.count}}</text>
+        
+          </view>
+        
+        </view>
+    
+      </view>
+</view>
+

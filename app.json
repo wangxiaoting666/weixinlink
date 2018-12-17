@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/weixin/weixin",
+    "pages/weixinlink/weixinlink"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}
